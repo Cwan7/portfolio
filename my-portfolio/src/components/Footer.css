@@ -1,0 +1,75 @@
+.footer {
+       position: fixed;
+       bottom: 0;
+       width: 100%;
+       background-color: #333; /* Dark background for contrast */
+       padding: 10px 0;
+       text-align: center;
+       border-top: 1px solid #555;
+     }
+
+     .footer-logos {
+       display: flex;
+       justify-content: center;
+       gap: 60px;
+       align-items: center;
+     }
+
+     .devicon-icon {
+       color: #ffffff; /* White for Devicon logos */
+       font-size: 1.8rem; /* Match Material Symbols size */
+       text-decoration: none;
+       transition: color 0.3s ease;
+     }
+
+     .devicon-icon:hover {
+       color: #00b7eb; /* Blue on hover */
+     }
+
+     .contact-item {
+       display: flex;
+       align-items: center;
+       position: relative;
+     }
+
+     .material-symbols-outlined {
+       color: #ffffff; /* White for Material Symbols */
+       font-size: 2rem; /* Consistent size */
+       cursor: pointer;
+       vertical-align: middle;
+     }
+
+     .material-symbols-outlined:hover {
+       color: #00b7eb; /* Blue on hover */
+     }
+
+     .contact-text {
+       margin-left: 20px; 
+       color: #ffffff; 
+       font-size: 1rem; 
+       text-decoration: none;
+       white-space: nowrap;
+     }
+
+     .contact-text:hover {
+       color: #007bff; /* Blue on hover */
+     }
+     @media (max-width: 624px) {
+       .footer-logos {
+        gap: 30px;
+       }
+     }
+      @media (max-width: 527px) {
+       .footer-logos {
+        gap: 15px;
+       }
+       .devicon-icon {
+        font-size: 1.5rem;
+       }
+       .material-symbols-outlined {
+        font-size: 1.66rem;
+       }
+       .contact-text {
+        font-size: .75rem;
+       }
+     }

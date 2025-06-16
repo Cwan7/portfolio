@@ -1,0 +1,70 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  padding: 2rem;
+  color: #fff; /* White text for contrast */
+}
+
+.hello-desc {
+  text-align: center; /* Center text horizontally */
+  max-width: 100%;
+}
+
+.hello-desc h1 {
+  font-size: 2.5rem;
+  margin: 0.5rem 0;
+  font-family: 'Arial', sans-serif;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow for depth */
+}
+
+.hello-desc span {
+  color: #00b7eb; /* Cyan highlight for your name */
+  font-weight: bold;
+}
+
+/* New image container below home-container */
+.image-container {
+  min-height: 50vh; /* Match home-container height */
+  display: flex;
+  justify-content: center; /* Center image horizontally */
+  align-items: center; /* Center image vertically */
+  padding: 2rem;
+  background-color: transparent; /* Match blueprint background if desired */
+}
+
+.image {
+  max-width: 400px; /* Base size from your CSS */
+}
+
+.image img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  border-radius: 50%; /* Make image circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  border: 2px solid #fff; /* White border to match blueprint theme */
+}
+
+@media (max-width: 768px) {
+  .home-container,
+  .image-container {
+    min-height: auto; /* Adjust height for mobile */
+    padding: 1rem;
+  }
+  .hello-desc h1 {
+    font-size: 2rem; /* Reduce text size on small screens */
+  }
+  .image {
+  max-width: 350px;
+  }
+}
+@media (max-width: 500px) {
+  .hello-desc h1 {
+    font-size: 1.5rem;
+  }
+  .image {
+    max-width: 300px;
+  }
+}
